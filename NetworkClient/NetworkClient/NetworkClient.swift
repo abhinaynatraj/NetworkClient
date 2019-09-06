@@ -13,8 +13,6 @@ class NetworkClient {
     public static let shared = NetworkClient()
     private init() {}
     private let urlSession = URLSession.shared
-    private let baseURL = URL(string: "https://api.themoviedb.org/3")!
-    private let apiKey = "b9919791236ff14542489b76a57c1b9a"
     private let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
@@ -32,13 +30,15 @@ class NetworkClient {
         case decodeError
     }
 
-    public func fetchResources<T: Decodable>(url: URL, completion: @escaping (Result<T, APIServiceError>) -> Void) {
+    public func fetchResources<T: Decodable>(url: URL, apiKey: String? = nil, completion: @escaping (Result<T, APIServiceError>) -> Void) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
             completion(.failure(.invalidEndpoint))
             return
         }
-        let queryItems = [URLQueryItem(name: "api_key", value: apiKey)]
-        urlComponents.queryItems = queryItems
+        if let apiKey = apiKey {
+            let queryItems = [URLQueryItem(name: "api_key", value: apiKey)]
+            urlComponents.queryItems = queryItems
+        }
         guard let url = urlComponents.url else {
             completion(.failure(.invalidEndpoint))
             return

@@ -54,16 +54,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkClient/MoviesViewController.swift"
-            timestampString = "589476326.1064889"
+            filePath = "NetworkClient/TableReload.swift"
+            timestampString = "589480893.7649601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "setupObservables()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "reload(change:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkClient/NetworkClient.swift"
+            timestampString = "589480893.765301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchResources(url:apiKey:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkClient/NetworkClient.swift"
+            timestampString = "589480893.765494"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fetchResources(url:apiKey:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;(__C.NSURLResponse, Foundation.Data), Swift.Error&gt;) -&gt; () in NetworkClient.NetworkClient.fetchResources&lt;A where A: Swift.Decodable&gt;(url: Foundation.URL, apiKey: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Result&lt;A, NetworkClient.NetworkClient.APIServiceError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/natara4/NetworkClient/NetworkClient/NetworkClient/NetworkClient.swift"
+                  timestampString = "589480086.743278"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "431">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;(__C.NSURLResponse, Foundation.Data), Swift.Error&gt;) -&gt; () in NetworkClient.NetworkClient.fetchResources&lt;A where A: Swift.Decodable&gt;(url: Foundation.URL, apiKey: Swift.Optional&lt;Swift.String&gt;, completion: (Swift.Result&lt;A, NetworkClient.NetworkClient.APIServiceError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NetworkClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/natara4/NetworkClient/NetworkClient/NetworkClient/NetworkClient.swift"
+                  timestampString = "589480086.745731"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "515">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NetworkClient/Reddit/RedditListViewModel.swift"
+            timestampString = "589480893.765558"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "handleSuccess(response:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,13 +153,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NetworkClient/TableReload.swift"
-            timestampString = "589476326.10673"
+            filePath = "NetworkClient/Reddit/RedditListCell.swift"
+            timestampString = "589480893.765752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "reload(change:)"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "configure(cellModel:indexPath:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

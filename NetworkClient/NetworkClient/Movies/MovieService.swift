@@ -28,6 +28,6 @@ public struct MovieService {
         let movieURL = baseURL
             .appendingPathComponent("movie")
             .appendingPathComponent(endpoint.rawValue)
-        NetworkClient.shared.fetchResources(url: movieURL, completion: result)
+        NetworkClient.shared.fetchResources(url: movieURL, apiKey: "b9919791236ff14542489b76a57c1b9a", completion: result)
     }
 }
